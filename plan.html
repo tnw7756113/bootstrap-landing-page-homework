@@ -44,7 +44,7 @@
             <div class="col-12 col-lg-8 mx-lg-auto">
                 <div class="card py-5 px-3 shadow  border-0">
                     <div class="card-body">
-                        <h4 class="card-title mb-3 border-start border-purple border-3 ps-2">選擇方案</h4>
+                        <h2 class="card-title mb-3 border-start border-purple border-3 ps-2">選擇方案</h2>
                         <div class="row row-cols-1 row-cols-lg-3 g-3 g-lg-1 mb-4">
                             <div class="col">
                                 <a class="btn btn-outline-purple text-nowrap w-100" data-bs-toggle="button" autocomplete="off" href="#">日本山梨縣櫻花<br>5天 $45,000起</a>
@@ -56,7 +56,7 @@
                                 <a class="btn btn-outline-purple text-nowrap w-100" data-bs-toggle="button" autocomplete="off" href="#">韓國釜山賞櫻<br>4天 $20,000起</a>
                             </div>
                         </div>
-                        <h4 class="card-title mb-3 border-start border-purple border-3 ps-2">填寫資料</h4>
+                        <h2 class="card-title mb-3 border-start border-purple border-3 ps-2">填寫資料</h2>
                         <form class="row g-3 needs-validation" novalidate>
                             <div class="col-12 col-lg-6">
                                 <label for="lastName" class="form-label">名字</label>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="email" class="form-label">電子郵件</label>
-                                <input type="email" class="form-control" id="email" placeholder="example@gmailcom" required>
+                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
                                 <div class="invalid-feedback">此欄位格式不對</div>
                             </div>
                             <div class="col-12">
@@ -85,25 +85,11 @@
                             </div>
                             <div class="col-6">
                                 <label for="adult" class="form-label">大人</label>
-                                <select id="adult" class="form-select">
-                                    <option selected>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+                                <input type="number" class="form-control" name="adult" id="adult" min="1" max="10">
                             </div>
                             <div class="col-6">
                                 <label for="child" class="form-label">小孩</label>
-                                <select id="child" class="form-select">
-                                    <option selected>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+                                <input type="number" class="form-control" name="child" id="child" min="0" max="10">
                             </div>
                             <div class="col-12">
                                 <label for="note" class="form-label">備註</label>
